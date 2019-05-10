@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="Content/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -49,9 +49,9 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a runat="server" href="~/About"><i class="fa fa-question-circle"></i> About</a></li>
+                        <li><a runat="server" href="~/Contact"><i class="fa fa-envelope"></i> Contact</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
